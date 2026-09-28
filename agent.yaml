@@ -1,0 +1,9 @@
+spec_version: "0.1.0"
+name: property-listing-quality-auditor
+version: 1.0.0
+description: Audits real-estate listings for completeness, consistency, clarity, and potentially unsupported claims.
+author: Janice Benita F
+runtime:
+  max_turns: 20
+  timeout: 120
+tags: [real-estate, listings, quality, compliance]
