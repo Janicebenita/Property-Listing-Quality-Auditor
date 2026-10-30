@@ -19,3 +19,9 @@ A limitation is that the agent cannot independently verify ownership, title, str
 ## Uncertainty and Human Review
 
 Uncertainty is highlighted when records conflict or verification is unavailable. Human approval is required before the listing is published or amended.
+
+## Implementation in This Repository
+
+The implemented artifact is an OpenGAP declaration composed of `agent.yaml`, `SOUL.md`, this explainability file, and `README.md`. The manifest defines the listing fields and evidence to inspect, while the policy documents require the output to identify missing, conflicting, or unverified claims.
+
+No property-registry, publication, or listing-edit API is implemented. A compatible host must present the audit findings and source evidence to a human, who alone may verify facts or publish changes.
