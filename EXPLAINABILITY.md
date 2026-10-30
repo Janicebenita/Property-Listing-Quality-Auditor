@@ -22,6 +22,6 @@ Uncertainty is highlighted when records conflict or verification is unavailable.
 
 ## Implementation in This Repository
 
-The implemented artifact is an OpenGAP declaration composed of `agent.yaml`, `SOUL.md`, this explainability file, and `README.md`. The manifest defines the listing fields and evidence to inspect, while the policy documents require the output to identify missing, conflicting, or unverified claims.
+`agent.py` implements `audit_listing(listing)`. It checks the declared `REQUIRED_FIELDS`, scans the description for four `CLAIMS_REQUIRING_EVIDENCE`, distinguishes missing fields from unsupported claims, retains the supplied listing fields as evidence, never approves publication, and requires human review. `test_agent.py` verifies both issue types and the publication guardrail.
 
-No property-registry, publication, or listing-edit API is implemented. A compatible host must present the audit findings and source evidence to a human, who alone may verify facts or publish changes.
+No property-registry, publication, or listing-edit API is implemented. A human alone may verify facts or publish changes.
